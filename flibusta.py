@@ -24,8 +24,8 @@ class FlibustaStore(BasicStoreConfig, OpenSearchOPDSStore):
 
     def get_details(self, search_result, timeout):
         search_result.drm = SearchResult.DRM_UNLOCKED
-        search_result.formats = "FB2, EPUB, MOBI, HTML"
-        search_result.downloads["FB2"] = search_result.detail_item + "/fb2"
+        search_result.formats = "FB2.ZIP, EPUB, MOBI, HTML"
+        search_result.downloads["FB2.ZIP"] = search_result.detail_item + "/fb2"
         search_result.downloads["EPUB"] = search_result.detail_item + "/epub"
         search_result.downloads["MOBI"] = search_result.detail_item + "/mobi"
         search_result.downloads["HTML"] = search_result.detail_item + "/read"
